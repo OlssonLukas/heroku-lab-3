@@ -14,6 +14,3 @@ axios.post('http://cloud-lab-3.herokuapp.com/getWordLengthFrequency', data.data)
     }).catch((err) => {
         console.log(err);
     });
-
-
-
