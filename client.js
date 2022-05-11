@@ -6,7 +6,7 @@ const data = {
 document.getElementById("sentence").innerHTML = data.data;
 
 
-axios.post('http://127.0.0.1:5500/getWordLengthFrequency', data.data)
+axios.post('http://cloud-lab-3.herokuapp.com/getWordLengthFrequency', data.data)
     .then((res) => {
         console.log(data);
         console.log(res.data);
