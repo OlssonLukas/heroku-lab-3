@@ -1,8 +1,6 @@
 var express = require('express')
 var app = express()
 
-
-var bodyParser = require('body-parser');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -38,7 +36,7 @@ app.post('/getWordLengthFrequency', function (req, res) {
         stringLen++;
     }
 
-    console.log("sending response");
+    console.table(result);
     res.send(result);
     res.end();
 
